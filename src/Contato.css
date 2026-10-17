@@ -1,0 +1,238 @@
+
+.contato-page {
+  min-height: 100vh;
+  background: #f5f8fc;
+  color: #17243a;
+}
+
+.contato-header {
+  min-height: 76px;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.contato-logo {
+  color: #17243a;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.contato-logo span {
+  color: #2878f0;
+}
+
+.contato-voltar {
+  color: #2878f0;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.contato-container {
+  width: min(760px, 90%);
+  margin: 0 auto;
+  padding: 65px 0 75px;
+}
+
+.contato-label {
+  display: block;
+  color: #2878f0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.contato-container h1 {
+  margin: 15px 0;
+  font-size: clamp(32px, 5vw, 46px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+
+.contato-container h1 span {
+  color: #2878f0;
+}
+
+.contato-intro {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  color: #68758a;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.contato-card {
+  padding: clamp(22px, 5vw, 38px);
+  background: #fff;
+  border: 1px solid #e3eaf3;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(26, 54, 93, 0.07);
+}
+
+.contato-card label {
+  display: block;
+  margin: 20px 0 9px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contato-card label:first-child {
+  margin-top: 0;
+}
+
+.contato-card input,
+.contato-card select {
+  width: 100%;
+  min-height: 49px;
+  padding: 12px 14px;
+  color: #17243a;
+  background: #fff;
+  border: 1px solid #d8e0ec;
+  border-radius: 9px;
+  font: inherit;
+  outline: none;
+}
+
+.contato-card input:focus,
+.contato-card select:focus {
+  border-color: #2878f0;
+  box-shadow: 0 0 0 3px rgba(40, 120, 240, 0.12);
+}
+
+.contato-resumo {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f0f5ff;
+  border-radius: 12px;
+}
+
+.contato-resumo > span,
+.contato-mensagem > span {
+  display: block;
+  color: #68758a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.contato-resumo strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 23px;
+}
+
+.contato-resumo p {
+  margin: 7px 0 0;
+  color: #2878f0;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.contato-resumo small {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contato-mensagem {
+  margin-top: 22px;
+  padding: 18px;
+  background: #f7f9fc;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+}
+
+.contato-mensagem p {
+  margin: 12px 0 0;
+  color: #45546a;
+  font-size: 14px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.contato-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 54px;
+  margin-top: 24px;
+  padding: 14px 18px;
+  color: #fff;
+  background: #168b50;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contato-whatsapp:hover {
+  background: #107642;
+  transform: translateY(-2px);
+}
+
+.contato-aviso {
+  margin: 15px 0 0;
+  color: #778397;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.contato-inicio {
+  display: inline-block;
+  margin-top: 27px;
+  color: #2878f0;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contato-inicio:hover {
+  text-decoration: underline;
+}
+
+.contato-footer {
+  padding: 24px 7%;
+  color: #7a879a;
+  background: #fff;
+  border-top: 1px solid #e5eaf2;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .contato-header {
+    padding: 17px 5%;
+  }
+
+  .contato-logo {
+    font-size: 22px;
+  }
+
+  .contato-voltar {
+    font-size: 10px;
+  }
+
+  .contato-container {
+    padding: 42px 0 55px;
+  }
+
+  .contato-whatsapp {
+    font-size: 11px;
+  }
+}

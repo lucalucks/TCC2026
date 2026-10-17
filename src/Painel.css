@@ -1,0 +1,159 @@
+
+.painel-page {
+  min-height: 100vh;
+  background: #f5f8fc;
+  color: #17243a;
+}
+
+.painel-header {
+  min-height: 76px;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e5eaf2;
+}
+
+.painel-logo {
+  color: #17243a;
+  font-size: 25px;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.painel-logo span {
+  color: #2878f0;
+}
+
+.painel-sair {
+  padding: 10px 20px;
+  color: #2878f0;
+  border: 1px solid #2878f0;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.painel-sair:hover {
+  color: #ffffff;
+  background: #2878f0;
+}
+
+.painel-container {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+  padding: 76px 0;
+}
+
+.painel-etiqueta {
+  color: #2878f0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.painel-container > h1 {
+  margin: 14px 0;
+  font-size: clamp(32px, 5vw, 48px);
+  letter-spacing: -1.5px;
+}
+
+.painel-descricao {
+  max-width: 650px;
+  margin-bottom: 38px;
+  color: #68758a;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.painel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.painel-card {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e4eaf3;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(26, 54, 93, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.painel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(26, 54, 93, 0.1);
+}
+
+.painel-card-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  color: #2878f0;
+  background: #eaf2ff;
+  border-radius: 14px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.painel-card h2 {
+  margin: 0 0 12px;
+  font-size: 21px;
+}
+
+.painel-card p {
+  min-height: 70px;
+  color: #68758a;
+  line-height: 1.6;
+}
+
+.painel-em-breve {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2878f0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.painel-voltar {
+  display: inline-block;
+  margin-top: 36px;
+  color: #2878f0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.painel-voltar:hover {
+  text-decoration: underline;
+}
+
+.painel-footer {
+  padding: 25px 7%;
+  color: #7a879a;
+  background: #ffffff;
+  border-top: 1px solid #e5eaf2;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  .painel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .painel-container {
+    padding: 48px 0;
+  }
+
+  .painel-card p {
+    min-height: auto;
+  }
+}
